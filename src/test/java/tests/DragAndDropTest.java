@@ -18,7 +18,7 @@ public class DragAndDropTest {
     }
 
     @Test
-    void dragAndDrop() {
+    void dragAndDropTest() {
         open("drag_and_drop");
         $("#column-a").shouldHave(text("A"));
         $("#column-b").shouldHave(text("B"));
@@ -31,7 +31,7 @@ public class DragAndDropTest {
     }
 
     @Test
-    void dragAndDropDifferentMethod() {
+    void dragAndDropDifferentMethodTest() {
         open("drag_and_drop");
         $("#column-a").shouldHave(text("A"));
         $("#column-b").shouldHave(text("B"));

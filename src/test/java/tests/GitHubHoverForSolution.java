@@ -1,6 +1,5 @@
 package tests;
 
-import com.codeborne.selenide.DragAndDropOptions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import com.codeborne.selenide.Configuration;
@@ -19,8 +18,8 @@ public class GitHubHoverForSolution {
     }
 
     @Test
-    void checkHoverForSolutions () {
-        open("baseUrl");
+    void checkHoverForSolutionsTest () {
+        open(" ");
         $(byTagAndText("button", "Solutions")).hover();
         $("ul li a[href='https://github.com/enterprise']").click();
         $("#hero-section-brand-heading").shouldHave(text ("The AI-powered\n" +
